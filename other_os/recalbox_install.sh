@@ -54,8 +54,8 @@ if [ -e $script ];
 		echo "Script will be installed now! Downloading ..."
 fi
 
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/other_os/recalbox_SafeShutdown.py"
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/other_os/recalbox_SafeShutdown.sh"
+wget -N -q --show-progress "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/other_os/recalbox_SafeShutdown.py"
+wget -N -q --show-progress "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/other_os/recalbox_SafeShutdown.sh"
 chmod +x recalbox_SafeShutdown.sh
 
 #Step 4) Enable Python script to run on start up------------
