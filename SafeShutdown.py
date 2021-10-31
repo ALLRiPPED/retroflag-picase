@@ -21,6 +21,8 @@ def when_pressed():
  if output:
      os.system("/opt/RetroFlag/multi_switch.sh --es-poweroff")
  else:
+     os.system("sudo chmod 777 \/sys\/bus\/usb\/drivers\/usb\/unbind") #allow for all to unbind
+     os.system("sudo echo \"usb2\" > \/sys\/bus\/usb\/drivers\/usb\/unbind") #turn off usb hub
      os.system("sudo shutdown -h now")
     
 def when_released():
@@ -34,6 +36,8 @@ def reboot():
  elif output:
      os.system("/opt/RetroFlag/multi_switch.sh --es-restart")
  else:
+     os.system("sudo chmod 777 \/sys\/bus\/usb\/drivers\/usb\/unbind") #allow for all to unbind
+     os.system("sudo echo \"usb2\" > \/sys\/bus\/usb\/drivers\/usb\/unbind") #turn off usb hub
      os.system("sudo reboot")
  
 btn = Button(powerPin, hold_time=hold)
