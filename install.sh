@@ -43,8 +43,8 @@ if [ -e $script ];
 		echo "Script will be installed now! Downloading ..."
 fi
 
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/SafeShutdown.py"
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/multi_switch.sh"
+wget -N -q --show-progress "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/SafeShutdown.py"
+wget -N -q --show-progress "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/multi_switch.sh"
 chmod +x multi_switch.sh
 
 #-----------------------------------------------------------
