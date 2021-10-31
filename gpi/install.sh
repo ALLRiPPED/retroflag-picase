@@ -1,5 +1,5 @@
 #!/bin/bash
-basewebsite="https://raw.githubusercontent.com/crcerror/retroflag-picase"
+basewebsite="https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase"
 sleep 2s
 #Step 1) Check if root--------------------------------------
 if [[ $EUID -ne 0 ]]; then
