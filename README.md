@@ -85,7 +85,7 @@ All metadata is always saved
 3. Press F4 enter terminal.
 4. In the terminal, type the one-line command below (case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/install_gpi.sh" | sudo bash`**
+**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_gpi.sh" | sudo bash`**
 
 --------------------
 
@@ -95,16 +95,16 @@ All metadata is always saved
 3. User: root Password: linux
 4. In the terminal, type the one-line command below (case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/install_gpi_batocera.sh" | bash`**
+**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_gpi_batocera.sh" | bash`**
 
 ## Section 3. Uninstallers
 
 #### Example for RetroPie
 Type in the terminal, type the one-line command below (case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/uninstall_all.sh" | sudo bash`**
+**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/uninstall_all.sh" | sudo bash`**
 
 #### Example for RecalBox and BATOCERA
 Type in the terminal, type the one-line command below (case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/uninstall_all.sh" | bash`**
+**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/uninstall_all.sh" | bash`**
