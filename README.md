@@ -1,110 +1,88 @@
-# retroflag-picase
+# Contents
+* [GPiCase2 (GPi Case 2 only)](#gpicase2-gpi-case-2-only)
+* [GPi Case (GPi Case only)](#gpi-case-gpi-case-only)
+    * [For RetroPie](#for-retropie)
+    * [For Recalbox](#for-recalbox)
+* [Pi Case (nespi+, superpi, megapi,nespi4 case)](#pi-case)
+    * [Example for RetroPie](#example-for-retropie)
+    * [Example for RecalBox](#example-for-recalbox)
+    * [Example for batocera](#example-for-batocera)
 
-**Section 1**\
-Installers for NesPi+, MegaPi, SuperPi cases and (since 2020/08/22) **NESPI4**
-Support for RetroPie, RecalBox and BATOCERA
+-------------------- 
 
-**Section 2**\
-Installer for the GPi case\
-Support for RetroPie and BATOCERA
+# GPiCase2 (GPi Case 2 only)
+The RetroFlag GPiCase 2 CM4 safe shutdown script will automatically switch between the LCD display and HDMI output when using the dock.
 
-**Section 3**\
-Uninstall for all systems and all cases\
-This means uninstaller for NesPi+, MegaPi, SuperPi and GPi cases\
-for RetroPie, RecalBox and BATOCERA
+### Click the link Jump to install GPiCase2 script：[GPiCase2 Script](https://github.com/ALLRiPPED/GPiCase2-Script).
 
-## Section 1. RetroFlag Pi-Case+ Safe Shutdown
+    
+-------------------- 
 
-#### Turn switch "SAFE SHUTDOWN" on PCB to ON position.
 
-![Safe Shutdown Switch](http://retroflag.com/images/nespi_case+/safe_shutdown.jpg "Safe Shutdown Switch")
+# GPi Case (GPi Case only)
+### Turn switch "SAFE SHUTDOWN" to ON.
 
-#### **Multi Switch Shutdown**
-with advanced shutdown features for more natural behaviour:
-* If you press restart if emulator is currently running, then you will be kicked back to ES main menu
-* If you press restart in ES main screen, ES will be restartet (no reboot!), good for quick saving metadata or internal saves.
-* If you press power-off then Raspberry will shutdown
+### For RetroPie:
 
-All metadata is always saved
-
-Turn switch "SAFE SHUTDOWN" on PCB to ON.
-
---------------------
-
-#### Example for **RetroPie:**
 1. Make sure internet connected.
 2. Make sure keyboard connected.
 3. Press F4 enter terminal.
-4. In the terminal, type the one-line command below (case sensitive):
+4. In the terminal, type the one-line command below(Case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install.sh" | sudo bash`**
+wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_gpi.sh" | sudo bash
 
---------------------
 
-#### Example for **RecalBox** and **Batocera:**
+### For Recalbox
 1. Make sure internet connected.
 2. Make sure keyboard connected.
-3. Press F4 first. And then press ALT-F2 enter termial.
+3. Press F4 first. And then press ALT-F2 enter terminal.
 4. User: root Password: recalboxroot
-5. In the terminal, type the one-line command below (case sensitive):
+5. In the terminal, type the one-line command below(Case sensitive):
 
-For Recalbox:\
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_recalbox.sh" | bash`**
+wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/recalbox_install_gpi.sh" | bash
 
-For Batocera:\
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_batocera.sh" | bash`**
-
-You can edit the python script and add some parameters to the script calls:
-```
-                  --restart will RESTART EmulationStation only
-                  --kodi will startup KODI Media Center
-                  --emukill to exit any running EMULATORS
-                  --espid to check if EmulationStation is currently active
-                  --emupid to check if an Emulator is running"
-
-```
-
-## Section 2. RetroFlag GPi-Case Safe Shutdown
-
-#### Turn switch "SAFE SHUTDOWN" on PCB to ON position.
-
-![](http://retroflag.com/images/gpi-case/safe_shutdown.png)
-
-#### **Multi Switch Shutdown**
-with advanced shutdown features for more natural behaviour:
-1. If you press power-off then Raspberry will shutdown and always save metadata even if you are in an ingame session
-
-All metadata is always saved
+  
+-------------------- 
 
 
---------------------
+# Pi Case 
+## (nespi+, superpi, megapi,nespi4 case)
+RetroFlag Pi-Case Safe Shutdown
 
-#### Example for **RetroPie:**
+### Turn switch "SAFE SHUTDOWN" to ON.
+
+
+### Example for RetroPie:
 1. Make sure internet connected.
 2. Make sure keyboard connected.
 3. Press F4 enter terminal.
-4. In the terminal, type the one-line command below (case sensitive):
+4. In the terminal, type the one-line command below(Case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_gpi.sh" | sudo bash`**
+wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install.sh" | sudo bash
 
---------------------
 
-#### Example for **Batocera**
+
+### Example for RecalBox:
 1. Make sure internet connected.
-2. Make sure keyboard or SSH connected.
-3. User: root Password: linux
-4. In the terminal, type the one-line command below (case sensitive):
+2. Make sure keyboard connected.
+3. Press F4 first. And then press ALT-F2 enter terminal.
+4. User: root Password: recalboxroot
+5. In the terminal, type the one-line command below(Case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/install_gpi_batocera.sh" | bash`**
+wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/recalbox_install.sh" | bash
 
-## Section 3. Uninstallers
 
-#### Example for RetroPie
-Type in the terminal, type the one-line command below (case sensitive):
 
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/uninstall_all.sh" | sudo bash`**
+### Example for batocera:
+1. Make sure internet connected.
+2. Make sure keyboard connected.
+3. Enter terminal. How to enter terminal: https://wiki.batocera.org/access_the_batocera_via_ssh
+4. User: root Password: linux
+5. In the terminal, type the one-line command below(Case sensitive):
 
-#### Example for RecalBox and BATOCERA
-Type in the terminal, type the one-line command below (case sensitive):
+wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/batocera_install.sh" | bash
 
-**`wget -O - "https://raw.githubusercontent.com/ALLRiPPED/retroflag-picase/master/uninstall_all.sh" | bash`**
+
+
+### Example for lakkatv:
+https://github.com/marcelonovaes/lakka_nespi_power
